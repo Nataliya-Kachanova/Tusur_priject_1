@@ -8,11 +8,11 @@
    </div>
    <div class="filter__container">
       <h2 class="filter__title section-title">Фильтр</h2>
-      <form class="filter__formFil formFil" id="js-filterForm">
-         <div class="formFil__list">
-            <div class="formFil__section">
-               <h6 class="formFil__list-title">Коллекция</h6>
-               <div class="formFil__check check">
+      <form class="filter__formField formField" id="js-filterForm">
+         <div class="formField__list">
+            <div class="formField__section">
+               <h6 class="formField__list-title">Коллекция</h6>
+               <div class="formField__check check">
                   <label class="check__item">
                      <input 
                         class="check__input" 
@@ -67,9 +67,9 @@
                   </label>
                </div>
             </div>
-            <div class="formFil_available">
-               <h6 class="formFil__list-title formFil__available-title" id="title-available">Наличие</h6>
-               <div class="formFil__radio radio">
+            <div class="formField_available">
+               <h6 class="formField__list-title formField__available-title" id="title-available">Наличие</h6>
+               <div class="formField__radio radio">
                   <label class="radio__item">
                      <input 
                         class="radio__input" 
@@ -103,9 +103,9 @@
                   </label>
                </div>
             </div>
-            <div class="formFil__orientation">
-               <h6 class="formFil__list-title">Ориентация</h6>
-               <div class="formFil__check check" id="orientation">
+            <div class="formField__orientation">
+               <h6 class="formField__list-title">Ориентация</h6>
+               <div class="formField__check check" id="orientation">
                   <label class="check__item">
                      <input 
                         class="check__input" 
@@ -130,42 +130,42 @@
                   </label>
                </div>
             </div>
-            <div class="formFil__price">
-               <h6 class="formFil__price-title">Цена, &#8381;</h6>
-               <div class="formFil__price-slider" id="range-slider"></div>
-						<div class="formFil__price-inputs">
-							<label class="formFil__price-label">
-								<span class="formFil__price-text">от</span>
+            <div class="formField__price">
+               <h6 class="formField__price-title">Цена, &#8381;</h6>
+               <div class="formField__price-slider" id="range-slider"></div>
+						<div class="formField__price-inputs">
+							<label class="formField__price-label">
+								<span class="formField__price-text">от</span>
 								<input 
                            type="number" 
                            min="0" 
                            max="6000" 
                            value="650"
                            placeholder="650" 
-                           class="formFil__price-input" 
+                           class="formField__price-input" 
                            id="input-0"
                         >
 							</label>
-							<label class="formFil__price-label">
-								<span class="formFil__price-text">до</span>
+							<label class="formField__price-label">
+								<span class="formField__price-text">до</span>
 								<input 
                            type="number" 
                            min="0" 
                            max="6000"
                            value="5000" 
                            placeholder="5000" 
-                           class="formFil__price-input" 
+                           class="formField__price-input" 
                            id="input-1"
                         >
 							</label>
 						</div>
             </div>
          </div>
-         <div class="formFil__btns">
-            <button type="button" class="formFil__apply formFil__apply--w50">
+         <div class="formField__btns">
+            <button type="button" class="formField__apply formField__apply--w50">
                Применить
             </button>
-            <button type="reset" class="formFil__reset-btn js-resetBtn">
+            <button type="reset" class="formField__reset-btn js-resetBtn">
                Сбросить
             </button>
          </div>
