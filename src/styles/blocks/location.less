@@ -1,0 +1,226 @@
+.location {
+   box-sizing: border-box;
+   width: 100%;
+   max-width: 1490px;
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   padding: 101px 45px 150px 0;
+   
+   @media @bw1660 {
+      padding: 103px 40px 136px;
+   }
+   @media @bw1340 {
+      padding: 40px 30px 94px;
+   }
+   @media @bw768 {
+      padding: 40px 20px 66px;
+   }
+   &__title {
+      margin: 0 auto;
+      padding-left: 45px;
+
+      @media @bw1660 {
+         padding-left: 5px;
+      }
+      @media @bw768 {
+         padding-left: 0;
+      }
+   }
+   &__wrapper {
+      margin-top: 80px;
+      display: flex;
+      justify-content: space-between;
+
+      @media @bw1340 {
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 60px;
+      }
+      @media @bw768 {
+         justify-content: center;
+         margin-top: 40px;
+      }
+   }
+   &__wrapper-content {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+
+      @media @bw1340 {
+         flex-direction: row;
+         gap: 8px;
+      }
+      @media @bw768 {
+         flex-direction: column;
+         gap: 0;
+      }
+   }
+   &__wrapper-box {
+      width: 361px;
+      height: 257px;
+      margin-top: 52px;
+      margin-bottom: 33px;
+      border-left: 6px solid transparent;
+      transition:  background-color 0.2s, box-shadow 0.2s, border-left-color 0.3s;
+      cursor: pointer;
+      
+      &:last-child {
+         margin-top: 0;
+         margin-bottom: 0;
+         @media @bw768 {
+            width: 274px;
+            height: 197px;
+            margin: 0;
+         }
+      }
+      &:hover {
+         border-left-color: @green;
+         background-color: @gray_bg;
+         box-shadow: 0 0 50px 0 @shadow;
+      }
+
+      @media @bw1660 {
+         margin-top: 22px;
+      }
+      @media @bw1340 {
+         width: 322px;
+         height: 219px;
+         margin: 0;
+      }
+      @media @bw768 {
+         width: 274px;
+         height: 172px;
+         margin: 0;
+      }
+   }
+}
+
+.info-card {
+   width: 100%;
+   max-width: 204px;
+   padding: 30px 0 30px 38px;
+   @media @bw1020 {
+      padding: 20px 0 20px 64px;
+   }
+   @media @bw768 {
+      padding: 20px 0 20px 19px;
+   }
+
+   &__title {
+      margin: 0 0 25px;
+      color: @black;
+      font-family: @font4;
+      font-size: 40px;
+      font-weight: @font_weight5;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      word-wrap: none;
+      @media @bw1660 {
+         margin: 0 0 23px;
+      }
+      @media @bw1340 {
+         font-size: 36px;
+      }
+      @media @bw1020 {
+         margin: 0 0 17px;
+      }
+      @media @bw768 {
+         margin: 0 0 15px;
+         font-size: 30px;
+      }
+   }
+   &__office {
+      margin: 0;
+      color: @black;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight2;
+      line-height: 1.388;
+      @media @bw1340 {
+         font-size: 16px;
+         line-height: 1.56;
+      }
+   }
+   &__office-weight {
+      font-weight: @font_weight4;
+   }
+   &__office-sing {
+      color: @gray_sign;
+   }
+   &__timetable {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 183px;
+      margin: 20px 0 0;
+      color: @black;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight2;
+      line-height: 1.388;
+      @media @bw1020 {
+         max-width: 165px;
+         margin: 15px 0 0;
+         font-size: 16px;
+         line-height: 1.56;
+      }
+   }
+   &__schedule {
+      margin: 0;
+   }
+   &__timetable-svg {
+      width: 11px;
+      height: 11px;
+   }
+// &__map{
+//    box-sizing: border-box;
+   
+//    width: 862px;
+//    height: 623px;
+//    border: 6px solid @black;
+//    @media @bw1660 {
+//       width: 57.91vw;
+//       height: 561px;
+//    }
+//    @media @bw1340 {
+//       width: 92.18vw;
+//       height: 511px;
+//       margin-bottom: 20px;
+//       border: 3px solid @black;
+//       order: -1;
+//    }
+//    @media @bw768 {
+//       width: 87.5vw;
+//       height: 203px;
+//       margin-bottom: 21px;
+//       order: -1;
+//    }
+// }
+}
+.location__map {
+   box-sizing: border-box;
+   width: 862px;
+   height: 623px;
+   border: 6px solid @black;
+   @media @bw1660 {
+      width: 57.91vw;
+      height: 561px;
+   }
+   @media @bw1340 {
+      width: 92.18vw;
+      height: 511px;
+      margin-bottom: 20px;
+      border: 3px solid @black;
+      order: -1;
+   }
+   @media @bw768 {
+      width: 87.5vw;
+      height: 203px;
+      margin-bottom: 21px;
+      order: -1;
+   }
+}

@@ -1,0 +1,408 @@
+.filter { 
+   @media @bw1340 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 110;
+      box-sizing: border-box;
+      display: none;
+      padding: 60px 30px;
+      background-color: @gray_bg;
+      overflow-y: auto;
+   }
+   @media @bw768 {
+      padding: 60px 20px;
+   }
+   &__sticky-close {
+      display: none;
+      @media @bw1340 {
+         position: absolute;
+         display: flex;
+         top: 25px;
+         right: 25px;
+      }
+      @media @bw768 {
+         top: 16px;
+         right: 15px;
+      }
+   }
+   &__container {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 265px;
+      @media @bw1340 {
+         max-width: 708px;
+      }
+      @media @bw768 {
+         max-width: 100%;
+      }
+   }
+   &__title {
+      display: none;
+      @media @bw1340 {
+         display: flex;
+         justify-content: flex-start;
+         margin-bottom: 40px;
+      }
+   }
+}
+.formFil {
+   &__list-title {
+      margin: 0 0 32px 0;
+      color: @black;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight4;
+      line-height: 1.388;
+      transition: font-size 0.3s;
+      @media @bw1340 {
+         margin: 0 0 24px 0;
+         font-size: 16px;
+         line-height: 1.56;
+      }
+      @media @bw768 {
+         margin: 0 0 20px 0;
+      }
+   }
+   &__price-title {
+      margin: 0 0 35px 0;
+      color: @black;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight4;
+      line-height: 1.388;
+      transition: font-size 0.2s;
+      @media @bw1340 {
+         margin: 0 0 30px 0;
+         font-size: 16px;
+         line-height: 1.56;
+      }
+   }
+   &__list {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      @media @bw1340 {
+         width: 708px;
+         gap: 27px;
+      }
+      @media @bw768 {
+         width: 100%;
+         gap: 32px;
+      }
+   }
+   &__price-inputs {
+      display: flex;
+      justify-content: space-between;
+      width: 263px;
+      @media @bw1340 {
+         width: 354px;
+      }
+      @media @bw768 {
+         width: 100%;
+      }
+   }
+   &__price-slider {
+      margin-bottom: 20px;
+      cursor: pointer;
+      @media @bw1340 {
+         width: 354px;
+         margin-bottom: 16px;
+      }
+      @media @bw768 {
+         width: 100%;
+      }
+   }
+   &__price-label {
+      display: flex;
+      align-items: center;
+      width: 70px;
+      height: 25px;
+      border: none;
+      border-radius: 4px;
+   }
+   &__price-input {
+      background-color: transparent;
+      color: @black;
+      font-family: @font1;
+      font-size: 16px;
+      font-weight: @font_weight2;
+      line-height: 1.56;
+      border: none;
+   }
+   &__price-text {
+      margin-right: 3px;
+      color: @black;
+      font-family: @font1;
+      font-size: 16px;
+      font-weight: @font_weight2;
+      line-height: 1.56;
+   }  
+   &__apply {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 263px;
+      height: 52px;
+      margin: 38px 0 30px 0;
+      padding: 15px 10px;
+      border: none;
+      background-color: @blue;
+      color: @white;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight2;
+      line-height: 1.388;
+      text-align: center;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background-color 0.2s;
+      cursor: pointer;
+      &:hover {
+         background-color:@hover_bl;
+      }
+      @media @bw1340 {
+         width: 100%;
+         height: 50px;
+         margin: 58px 0 0;
+         font-size: 16px;
+      }
+      @media @bw768 {
+         margin: 38px 0 0;
+      }
+   }
+   &__reset-btn {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 90px;
+      height: 25px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      color: @blue;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight2;
+      line-height: 1.388;
+      text-align: center;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 0.2s, font-size 0.2s, top 0.2s, left 0.2s;
+      cursor: pointer;
+      &:hover {
+         color:@hover_bl;
+      }
+      @media @bw1340 {
+         position: absolute;
+         top: 30px;
+         left: 185px;
+         font-size: 16px;
+         line-height: 1.56;
+      }
+      @media @bw768 {
+         top: 12px;
+         left: 110px;
+      }
+   }
+}
+.radio {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   @media @bw1340 {
+      flex-direction: row;
+      gap: 50px;
+   }
+   @media @bw768 {
+      flex-wrap: wrap;
+      gap: 16px 45px;
+      padding-top: 5px;
+   }
+
+   &__item {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 18px;
+      margin-bottom: 15px;
+      padding-top: 2px;
+      padding-left: 18px;
+      color: @black;
+      cursor: pointer;
+      &:nth-child(1) {
+         margin-bottom: 12px;
+         @media @bw768 {
+            margin-bottom: 0;
+         }
+      }
+      &:nth-child(2) {
+         @media @bw768 {
+            order: 1;
+         }
+      }
+      &:last-child {
+         margin-bottom: 0;
+      }
+
+      @media @bw1340 {
+         padding-top: 0;
+      }
+      @media @bw768 {
+         margin-bottom: 0;
+      }
+   }
+   &__input {
+      .is-hidden;
+
+      &:checked {
+         &~.radio__mark {
+            background-color: @black;
+         }
+      }
+   }
+   &__mark {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      box-sizing: border-box;
+      display: block;
+      width: 18px;
+      height: 18px;
+      padding: 3px;
+      border: 2px solid @black;
+      border-radius: 50%;
+      background-clip: content-box;
+      background-color: transparent;
+      transition: background-color 0.2s;
+   }
+   &__label {
+      margin-left: 20px;
+      color: @black;
+      font-family: @font1;
+      font-weight: @font_weight2;
+      font-size: 18px;
+      line-height: 1.388;
+      @media @bw1340 {
+         margin-left: 10px;
+         font-size: 16px;
+         line-height: 1.377;
+      }
+   }
+}
+.check {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   @media @bw1340 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px 62px;
+      width: 500px;
+   }
+   @media @bw768 {
+      gap: 16px 62px;
+      width: 100%;
+   }
+   &__item {
+      position: relative;
+      box-sizing: border-box;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 18px;
+      margin-bottom: 15px;
+      padding-left: 18px;
+      color: @black;
+      cursor: pointer;
+      &:last-child {
+         margin-bottom: 0;
+      }
+      &:nth-child(2) {
+         @media @bw768 {
+            order: 1;
+         }
+      }
+      &:nth-child(3) {
+         @media @bw768 {
+            order: 2;
+         }
+      }
+      &:nth-child(5) {
+         @media @bw768 {
+            order: 1;
+         }
+      }
+
+      @media @bw768 {
+         margin-bottom: 0;
+      }
+   }
+   &__input {
+      .is-hidden();
+      &:checked {
+         & ~ .check__mark {
+            background-color: transparent;
+            &::after {
+               content: "";
+               position: absolute;
+               left: 6px;
+               bottom: 3px;
+               display: block;
+               width: 3px;
+               height: 11px;
+               border-bottom: 2px solid @black;
+               border-right: 2px solid @black;
+               transform: rotate(45deg);
+               @media @bw1340 {
+                  left: 5px;
+                  bottom: 2px;
+               }
+            }
+         }
+      }
+   }
+   &__mark {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      box-sizing: border-box;
+      display: block;
+      width: 18px;
+      height: 18px;
+      padding: 4px;
+      border: 2px solid @black;
+      border-radius: 3px;
+      background-color: transparent;
+      transition: background-color 0.2s;
+   }
+   &__label {
+      margin-left: 15px;
+      color: @black;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight2;
+      line-height: 1.388;
+      @media @bw1660 {
+         margin-left: 18px;
+      }
+      @media @bw1340 {
+         margin-left: 10px;
+         font-size: 16px;
+         line-height: 1.377;
+      }
+   }
+}
+.check#orientation {
+   @media @bw768 {
+      flex-wrap: nowrap;
+      gap: 44px;
+      padding-top: 5px;
+   }
+}

@@ -1,0 +1,77 @@
+<div class="product-card">
+   <div class="product-card__container">
+      <div class="product-card__picture-box" id="js-eventOpenBtn">
+         <picture class="product-card__picture">
+            <source 
+               media="(max-width: 767px)" 
+               type="image/webp"  
+               srcset="assets/images/single-poster/single-poster320.webp"
+            >
+            <source media="(max-width: 767px)" srcset="assets/images/single-poster/single-poster320.jpg">
+
+            <source type="image/webp" srcset="assets/images/single-poster/single-poster.webp">
+            <img src="assets/images/single-poster/single-poster.jpg" alt="img" class="product-card__img" />                                                                                                                                 
+         </picture>
+      </div>
+
+      <div class="product-card__info-box">
+         <h4 class="product-card__title">Постер Andy Mouse <span class="product-card__span">|</span> 60-60 см</h4>
+         <div class="product-card__price">1 850 ₽</div>
+         <form class="product-card__radio-choice radio-choice">
+            <label class="radio-choice__item">
+               <input 
+                  class="radio-choice__input" 
+                  type="radio" 
+                  name="choice" 
+                  value="paper" 
+                  checked
+               />
+               <span class="radio-choice__mark"></span>
+               <span class="radio-choice__label">Бумажный постер</span>
+            </label>
+            <label class="radio-choice__item">
+               <input 
+                  class="radio-choice__input" 
+                  type="radio" 
+                  name="choice" 
+                  value="electronic"
+               />
+               <span class="radio-choice__mark"></span>
+               <span class="radio-choice__label">Электронный постер</span>
+            </label>
+         </form>
+         <div class="product-card__box1">
+            <h5 class="product-card__box1-title product-card__item">Количество</h5>
+            <div class="product-card__box1-btns">
+               <button type="button" class="product-card__btn" id="increaseBtn">
+                  <svg class="product-card__icon" width="24" height="24">
+                     <use xlink:href="assets/icons/symbols.svg#plus"></use>
+                  </svg>
+               </button>
+               <div class="product-card__box1-qty" id="cardQty">1</div>
+               <button type="button" class="product-card__btn" id="decreaseBtn">
+                  <svg class="product-card__icon" width="24" height="24">
+                     <use xlink:href="assets/icons/symbols.svg#minus"></use>
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <div class="product-card__box2">
+            <button type="button" class="product-card__btn-add">Добавить в корзину</button>
+            <button type="button" class="product-card__btn-heart">
+               <svg class="product-card__icon-heart" width="24" height="24" viewBox="0 0 24 24" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+                  </g>
+               </svg>
+            </button>
+         </div>
+         <div class="product-card__box3">
+            <svg class="product-card__box3-icon" width="24" height="24">
+               <use xlink:href="assets/icons/symbols.svg#truck"></use>
+            </svg>
+            <p class="product-card__box3-desc product-card__item">Бесплатная доставка</p>
+         </div>
+      </div>
+   </div> 
+</div>

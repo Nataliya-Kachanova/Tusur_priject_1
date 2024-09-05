@@ -1,0 +1,161 @@
+.aboutHaring {
+   .container();
+   display: flex;
+   flex-direction: column;
+   padding-top: 200px;
+   @media @bw1660 {
+      padding-top: 170px;
+   }
+   @media @bw1340 {
+      padding-top: 104px;
+   }
+   @media @bw768 {
+      padding-top: 60px;
+   }
+
+   &__container {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 862px;
+      grid-template-areas:
+         'text picture'
+         'btn btn';
+      @media @bw1660 {
+         grid-template-columns: 1fr 776px;
+      }
+      @media @bw1340 {
+         grid-template-columns: 1fr 636px;
+      }
+      @media @bw1020 {
+         grid-template-columns: 1fr 436px;
+      }
+      @media @bw600 {
+         grid-template-columns: 1fr;
+         grid-template-areas:
+         'text'
+         'picture'
+         'btn';
+      }
+
+   }
+   &__textContent {
+      grid-area: text;
+   }
+   &__block {
+      grid-area: picture;
+   }
+   &__button {
+      position: absolute;
+      top: -19vw;
+      left: 16.8vw;
+      grid-area: btn;
+      width: 262px;
+      margin: 0;
+      @media @bw1660 {
+         top: -23.9vw;
+         left: 21.7vw;
+      }
+      @media @bw1340 {
+         top: -23vw;
+         left: 21.3vw;
+         width: 188px;
+         font-size: 16px;
+      }
+      @media @bw768 {
+         top: 0;
+         left: 0;
+         margin-top: 29px;
+      }
+   }
+   &__title {
+      justify-content: flex-start;
+      margin-bottom: 40px;
+      @media @bw768 {
+         justify-content: center;
+         margin-bottom: 31px;
+      }
+   }
+   &__description {
+      width: 100%;
+      max-width: 322px;
+      margin: 0;
+      color: @black;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight2;
+      line-height: 1.388;
+      @media @bw1340 {
+         max-width: 230px;
+         font-size: 16px;
+         line-height: 1.377;
+      }
+      @media @bw768 {
+         max-width: 280px;
+      }
+   }
+   &__description-subitem {
+      margin-top: 25px;
+      @media @bw1340 {
+         margin-top: 21px;
+      }
+      @media @bw768 {
+         margin-top: 22px;
+      }
+   }
+   &__block-sign {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+      font-size: 0;
+   }
+   &__block-sign-desc {
+      margin: 0;
+      color: @black;
+      font-family: @font1;
+      font-size: 16px;
+      font-weight: @font_weight1;
+      line-height: 1.562;
+      @media @bw1340 {
+         font-size: 14px;
+         line-height: 1.79;
+      }
+   }
+   &__block-sign-icon {
+      width: 100px;
+      height: 40px;
+      @media @bw1340 {
+         width: 76px;
+         height: 30px;
+      }
+   }
+   &__block-picture {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin: 0;
+      font-size: 0;
+      overflow: hidden;
+      &::after {
+         content: "";
+         display: block;
+         width: 100%;
+         padding-top: 100%;
+      }
+      @media @bw1340 {
+         margin-top: 100px;
+      }
+      @media @bw768 {
+         margin-top: 40px;
+      }
+   }
+   &__block-picture-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}

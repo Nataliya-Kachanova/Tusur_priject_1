@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('blocks/head.html')
+<body>
+   <!-- Шапка  -->
+   @@include('blocks/page-header.html')
+   <!-- Содержание -->
+   <main class="main">
+      <div class="main__container">
+         <article class="haring">
+            <div class="haring__container">
+               <!-- Навигация -->
+               <div class="haring__breadcrumbs breadcrumbs">
+                  <a href="index.html" class="breadcrumbs__link">Главная</a>
+                  <a href="#" class="breadcrumbs__link">Кит Харинг</a>
+                  <button type="button" class="breadcrumbs__btn">
+                     <svg class="breadcrumbs__icon" width="24" height="24">
+                        <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                     </svg>
+                  </button>
+               </div>
+               <!-- Статья -->
+               @@include('blocks/article.html')
+               <!-- Таблица -->
+               @@include('blocks/table.html')
+            </div>
+         </article>
+      </div>
+   </main>
+   <!-- Подвал  -->
+   @@include('blocks/page-footer.html')
+   <!-- Скрипты -->
+   <script src="scripts/jquery-3.7.1.min.js"></script>
+   <script src="scripts/main.js"></script>
+</body>
+</html>

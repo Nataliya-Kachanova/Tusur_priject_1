@@ -1,0 +1,80 @@
+.breadcrumbs {
+   box-sizing: border-box;
+   display: flex;
+   width: 100%;
+   max-width: 1480px;
+   margin: 0 auto;
+   padding-left: 40px;
+   padding-right: 40px;
+   @media @bw1660 {
+      padding-left: 40px;
+      padding-right: 40px;
+   }
+   @media @bw1340 {
+      padding-left: 25px;
+      padding-right: 25px;
+   }
+   @media @bw768 {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+
+   &__link {
+      box-sizing: border-box;
+      display: inline-flex;
+      color: @black;
+      font-family: @font1;
+      font-size: 14px;
+      font-weight: @font_weight2;
+      line-height: 1.79;
+      text-decoration: none;
+      transition: color 0.2s;
+      cursor: pointer;
+      &:first-child {
+         color: @gray_sign;
+         &:hover {
+            color: @blue;
+         }
+      }
+      &:last-child {
+         pointer-events: none;
+         cursor: default;
+      }
+      @media @bw1020 {
+         display: none;
+      }
+      @media @bw768 {
+         display: none;
+      }
+   }
+   &__btn {
+      display: none;
+      @media @bw1020 {
+         box-sizing: border-box;
+         display: flex;
+         width: 24px;
+         height: 24px;
+         padding: 0;
+         border: none;
+         background-color: none;
+         color: @black;
+         font-size: 0;
+         transition: color 0.2s;
+         cursor: pointer;
+         &:hover {
+            color: @blue;
+         }
+      }
+   }
+   &__icon {
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+   }
+}
+
+div.breadcrumbs a+a::before {
+   content: "/";
+   padding: 0 3px;
+   color: @black;
+}

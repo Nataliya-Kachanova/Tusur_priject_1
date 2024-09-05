@@ -1,0 +1,76 @@
+<div class="gallerySlider">
+   <div class="gallerySlider__container">
+      <footer class="swiper-footer">
+         <button type="button" class="swiper-arrow-prev arrow arrow--left">
+            <svg class="arrow__icon" width="24" height="24">
+               <use xlink:href="assets/icons/symbols.svg#arrow-left"></use>
+            </svg>
+         </button>
+         <button type="button" class="swiper-arrow-next arrow">
+            <svg class="arrow__icon" width="24" height="24">
+               <use xlink:href="assets/icons/symbols.svg#arrow-right"></use>
+            </svg>
+         </button>
+      </footer>
+      <div class="gallerySlider__swiper swiper swiper--3s js-swiper">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide swiper--green">
+               <!-- prettier-ignore -->
+               @@include('product-slide.html', {
+                  "class": "",
+                  "img": "assets/images/swiper/1.jpg",
+                  "img_webp": "assets/images/swiper/1.webp",
+                  "alt": "poster",
+                  "price": "1 850 ₽",
+                  "title": "Постер | 60-60 см"
+               })
+            </div>
+            <div class="swiper-slide swiper--orange">
+               <!-- prettier-ignore -->
+               @@include('product-slide.html', {
+                  "class": "",
+                  "img": "assets/images/swiper/2.jpg",
+                  "img_webp": "assets/images/swiper/2.webp",
+                  "alt": "poster",
+                  "price": "1 850 ₽",
+                  "title": "Постер | 60-60 см"
+               })
+            </div>
+            <div class="swiper-slide swiper--cyan">
+               <!-- prettier-ignore -->
+               @@include('product-slide.html', {
+                  "class": "",
+                  "img": "assets/images/swiper/3.jpg",
+                  "img_webp": "assets/images/swiper/3.webp",
+                  "alt": "poster",
+                  "price": "1 850 ₽",
+                  "title": "Постер | 60-60 см"
+               })
+            </div>
+            <div class="swiper-slide swiper--yellow">
+               <!-- prettier-ignore -->
+               @@include('product-slide.html', {
+                  "class": "",
+                  "img": "assets/images/swiper/4.jpg",
+                  "img_webp": "assets/images/swiper/4.webp",
+                  "alt": "poster",
+                  "price": "1 850 ₽",
+                  "title": "Постер | 60-60 см"
+               })
+            </div>
+            <div class="swiper-slide swiper--green">
+               <!-- prettier-ignore -->
+               @@include('product-slide.html', {
+                  "class": "",
+                  "img": "assets/images/swiper/5.jpg",
+                  "img_webp": "assets/images/swiper/5.webp",
+                  "alt": "poster",
+                  "price": "1 850 ₽",
+                  "title": "Постер | 60-60 см"
+               })
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+   </div>
+</div>

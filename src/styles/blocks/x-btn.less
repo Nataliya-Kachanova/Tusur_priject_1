@@ -1,0 +1,20 @@
+.x-btn {
+   display: flex;
+   width: 24px;
+   height: 24px;
+   padding: 0;
+   border: none;
+   background-color: transparent;
+   color: @black;
+   outline: none;
+   transition: background-color 0.2s;
+   cursor: pointer;
+   &:hover {
+      background-color: @blue_hover;
+   }
+   &__icon {
+      margin: auto;
+      color: @black;
+      pointer-events: none;
+   }
+}

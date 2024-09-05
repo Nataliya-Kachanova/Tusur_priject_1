@@ -1,0 +1,108 @@
+.pp {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 110;
+   box-sizing: border-box;
+   display: none;
+   background-color: rgba(18, 18, 18, 0.3);
+   padding: 75px 95px 75px;
+   overflow-y: auto;
+   @media @bw1660 {
+      padding: 59px 95px 75px;
+   }
+   @media @bw1340 {
+      padding: 140px 30px 45px;
+   }
+   @media @bw768 {
+      padding: 60px 0 100px;
+   }
+   &__container {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 810px;
+      margin: 0 auto auto;
+      padding: 67px;
+      background-color: @gray_bg;
+      @media @bw1660 {
+         max-width: 633px;
+      }
+      @media @bw1340 {
+         max-width: 708px;
+      }
+      @media @bw768 {
+         max-width: 100%;
+         padding: 0;
+      }
+   }
+   
+   &__picture-box {
+      width: 100%;
+      max-width: 676px;
+      border: 1px solid @gray_sign;
+      @media @bw1660 {
+         max-width: 499px;
+      }
+      @media @bw1340 {
+         max-width: 574px;
+      }
+      @media @bw768 {
+         max-width: 100%;
+         margin: 39px 0 90px;
+         border: none;
+      }
+   }
+   &__picture {
+      position: relative;
+      display: block;
+      width: 585px;
+      margin: 42px 45px;
+      font-size: 0;
+      text-decoration: none;
+      overflow: hidden;
+      &::after {
+         content: "";
+         display: block;
+         width: 100%;
+         padding-top: 101%;
+         @media @bw768 {
+            padding-top: 100%;
+         }
+      }
+      @media @bw1660 {
+         width: 432px;
+         margin: 31px 33px;
+      }
+      @media @bw1340 {
+         width: 497px;
+         margin: 36px 38px;
+      }
+      @media @bw768 {
+         width: 302px;
+         margin: 39px auto;
+      }
+   }
+   &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+   }
+   &__x-btn {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      @media @bw768 {
+         top: 19px;
+         right: 14px;
+      }
+   }
+}

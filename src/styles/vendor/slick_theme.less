@@ -1,0 +1,32 @@
+.slick-slide {
+    min-width: 0;
+    cursor: pointer;
+}
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-prev,
+.slick-next {
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 50px 0 @shadow;   
+    }
+}
+.slick-center picture {
+    margin: 60px 59px 59px 60px;
+    transition: margin 0.5s;
+    @media @bw1660 {
+        margin: 60px 59px 58px 60px;
+    }
+    @media @bw1340 {
+        margin: 33px;
+    }
+    @media @bw768 {
+        margin: 32px 31px;
+    }
+}

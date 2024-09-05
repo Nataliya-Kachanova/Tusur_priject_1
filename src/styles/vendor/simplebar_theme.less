@@ -1,0 +1,25 @@
+.custom-scrollbar {
+   position: relative; 
+}
+.simplebar-track.simplebar-vertical {
+   width: 3px;
+   margin-right: 7px;
+	background-color: transparent;
+}
+.simplebar-scrollbar::before {
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+   height: 61px;
+   background-color: @placeholder;
+	border-radius: 3px;
+	opacity: 1;
+}
+.simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
+	top: 0;
+	bottom: 0;
+}
+.simplebar-scrollbar.simplebar-visible::before {
+	opacity: 1;
+}

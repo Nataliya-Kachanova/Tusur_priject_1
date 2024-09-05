@@ -1,0 +1,186 @@
+//слайдер №1 на декстопе
+.swiper--1s {
+   position: relative;
+   width: 100%;
+   max-width: 588px;
+   height: 100%;
+   max-height: 469px;
+   @media @bw1340 {
+      max-width: 346px;
+      max-height: 275px;
+   }
+   @media @bw768 {
+      max-width: 164px;
+      max-height: 130px;
+      margin: 12px 0 76px 0;
+   }
+   .swiper-slide {
+      box-sizing: border-box;
+      width: 100%;
+      min-width: 588px;
+      @media @bw1340 {
+         width: 58%;
+         min-width: 346px;
+      }
+      @media @bw768 {
+         width: 40%;
+         min-width: 164px;
+      }
+      & > * {
+         width: 100%;
+      }
+      .product-slide {
+         &__link {
+            cursor: pointer;
+            cursor: grab;
+            &:active {
+               cursor: pointer;
+               cursor: grabbing;
+            }
+         }
+         &__title {
+            cursor: pointer;
+         }
+      }
+   }
+}
+.swiper-pagination {
+   width: 100%;
+   max-width: 232px;
+   position: relative;
+   top: 1vw;
+   left: 5.3vw;
+   @media @bw1660 {
+      top: 1.5vw;
+      left: 3.7vw;
+   }
+   @media @bw1340 {
+      max-width: 162px;
+      top: 2.5vw;
+      left: 0;
+   }
+   @media @bw768 {
+      max-width: 140px;
+      top: 3.6vw;
+      left: -0.5vw;
+   }
+}
+.swiper-pagination-bullet {
+   padding: 0;
+   margin-left: 30px;
+   border: none;
+   background-color: transparent;
+   color: @black;
+   font-family: @font4;
+   font-size: 22px;
+   font-weight: @font_weight3;
+   letter-spacing: 0.05em;
+   text-decoration: none;
+   white-space: nowrap;
+   cursor: pointer;
+   &:first-child {
+      margin-left: 0;
+   }
+   @media @bw1340 {
+      margin-left: 20px;
+      font-size: 16px;
+   }
+   @media @bw768 {
+      margin-left: 17px;
+      font-size: 14px;
+   }
+   
+}
+.swiper-pagination-bullet-active {
+   color: @green;
+   font-size: 30px;
+   font-weight: @font_weight5;
+   @media @bw1340 {
+      font-size: 20px;
+   }
+   @media @bw768 {
+      font-size: 20px;
+   }
+}
+//слайдер №3 на детальной странице
+.swiper-slide {
+   height: auto;
+   display: flex;
+}
+.swiper--3s {
+   position: relative;
+   width: 100%;
+   .swiper-slide {
+      box-sizing: border-box;
+      width: 25%;
+      min-width: 350px;
+      @media @bw1660 {
+         min-width: 315px;
+      }
+      @media @bw1340 {
+         width: 50%;
+         min-width: 354px;
+      }
+      @media @bw768 {
+         width: 100%;
+         min-width: 280px;
+      }
+     & > * {
+         width: 100%;
+      }
+      .product-slide {
+         &__link {
+            cursor: pointer;
+            cursor: grab;
+            &:active {
+               cursor: pointer;
+               cursor: grabbing;
+            }
+         }
+         &__title {
+            cursor: pointer;
+         }
+      }
+   }
+}
+.swiper--green {
+   background-color: @green;
+}
+.swiper--orange {
+   background-color: @orange;
+}
+.swiper--cyan {
+   background-color: @cyan;
+}
+.swiper--yellow {
+   background-color: @yellow;
+}
+.swiper-footer {
+   position: absolute;
+   top: -30px;
+   right: -13px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 132px;
+   max-width: 100%;
+   margin-right: 30px;
+   @media @bw1660 {
+      top: -25px;
+      margin-right: 29px;
+   }
+   @media @bw1340 {
+      top: -20px;
+      width: 122px;
+      margin-right: 20px;
+   }
+   @media @bw768 {
+      position: relative;
+      order: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 154px;
+      margin: 10px 0 0 50px;
+   }
+}

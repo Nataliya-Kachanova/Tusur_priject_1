@@ -1,0 +1,60 @@
+html,body {
+   width: 100%; 
+   margin: 0;
+   padding: 0;
+}
+body {
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   padding-top: 105px;
+   background-color: @gray_bg;
+   color: @black;
+   font-family: @font1;
+   font-size: 18px;
+   font-weight: @font_weight2;
+   font-style: normal;
+   line-height: 1.388;
+   overflow-x: hidden;
+   @media @bw1020 {
+      padding-top: 75px;
+   }
+}
+.main {
+   flex: 1 0 auto;
+   width: 100%;
+   margin: 0 auto;
+   padding-top: 20px;
+   @media @bw1020 {
+      padding-top: 15px;
+   }
+   @media @bw768 {
+      padding-top: 10px;
+   }
+}
+.page-footer {
+   flex: 0 0 auto;
+}
+
+a {
+   color: @black;
+   outline: none;
+   text-decoration: none;
+}
+input,
+textarea,
+select {
+   box-shadow: none;
+   outline: none;
+   color: @black;
+   font-family: @font1;
+}
+textarea {
+   resize: none;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+}

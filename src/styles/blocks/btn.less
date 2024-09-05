@@ -1,0 +1,30 @@
+.btn {
+   box-sizing: border-box;
+   display: inline-block;
+   width: 228px;
+   height: 52px;
+   margin-top: 12px;
+   padding: 15px 10px;
+   border: none;
+   background-color: @blue;
+   color: @white;
+   font-family: @font1;
+   font-size: 18px;
+   font-weight: @font_weight2;
+   line-height: 1.388;
+   text-align: center;
+   text-decoration: none;
+   white-space: nowrap;
+   transition: background-color 0.2s;
+   cursor: pointer;
+   &:hover {
+      background-color:@hover_bl;
+   }
+   @media @bw1340 {
+      height: 50px;
+      font-size: 16px;
+   }
+   @media @bw768 {
+      width: 100%;
+   }
+}

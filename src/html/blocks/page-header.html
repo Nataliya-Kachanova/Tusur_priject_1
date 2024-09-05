@@ -1,0 +1,69 @@
+<header class="page-header">
+   <div class="page-header__container">
+      <div class="page-header__left-block">
+         <a href="catalog.html" class="page-header__catalog">
+            <svg width="24" height="24">
+               <use xlink:href="assets/icons/symbols.svg#grid"></use>
+            </svg>
+            <span class="page-header__catalog-display">Каталог</span>
+         </a>
+      </div>
+      <a href="index.html" class="page-header__logo">
+         <picture class="page-header__logo-picture">
+            <source 
+            media="(max-width: 1019px)" 
+            type="image/webp"  
+            srcset="assets/images/logo768.webp"
+            >
+            <source media="(max-width: 1019px)" srcset="assets/images/logo768.png">
+
+            <source type="image/webp" srcset="assets/images/logo1920.webp">
+            <img src="/assets/images/logo1920.png" alt="image" class="page-header__logo-img">
+         </picture>
+         <span class="page-header__logo-right">Collection</span> 
+      </a>
+      <nav class="page-header__nav">
+         <a href="#" class="page-header__nav-link" id="elem" title="Избранное">
+            <svg class="page-header__nav-icon page-header__nav--heart"  >
+               <!-- <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z" />
+               </g> -->
+               <use xlink:href="assets/icons/symbols.svg#heart_1"></use>
+            </svg>
+            <span class="page-header__nav-right">Избранное</span>
+            <span class="page-header__adder"></span>
+         </a>
+         <a href="#" class="page-header__nav-link">
+            <svg class="page-header__nav-icon page-header__nav--cart">
+               <!-- <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7.75 7.75L7 4.75H4.75M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z"  />
+                  <path d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z" fill="transparent" />
+                  <path d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z" fill="#111111" />
+               </g> -->
+               <use xlink:href="assets/icons/symbols.svg#cart"></use>
+            </svg>
+            <span class="page-header__nav-right">Корзина</span>
+            <span class="page-header__adder2"></span>
+         </a>
+         <!-- кнопка входа  -->
+         <a href="login.html" class="page-header__nav-link" title="Регистрация">
+            <svg class="page-header__nav-icon page-header__nav--user" >
+               <!-- <g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 11.25C13.7949 11.25 15.25 9.79493 15.25 8C15.25 6.20507 13.7949 4.75 12 4.75C10.2051 4.75 8.75 6.20507 8.75 8C8.75 9.79493 10.2051 11.25 12 11.25Z"  />
+                  <path d="M6.84723 19.25H17.1522C18.2941 19.25 19.1737 18.2681 18.6405 17.2584C17.856 15.7731 16.0677 14 11.9997 14C7.93174 14 6.1434 15.7731 5.35897 17.2584C4.8257 18.2681 5.70531 19.25 6.84723 19.25Z" />
+               </g> -->
+               <use xlink:href="assets/icons/symbols.svg#log-in_1"></use>
+               
+            </svg>
+            <span class="page-header__nav-right">Личный кабинет</span>
+         </a>
+         <!--кнопка выхода -->
+         <a href="#" class="page-header__nav-link page-header__nav-logIn">
+            <svg class="page-header__nav-icon" width="24" height="24">
+               <use xlink:href="assets/icons/symbols.svg#login-in"></use>
+            </svg>
+         </a>
+      </nav>
+      <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+   </div>
+</header>

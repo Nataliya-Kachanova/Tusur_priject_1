@@ -1,0 +1,46 @@
+.gallerySlider {
+   &__container {
+      .container ();
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding-top: 58px;
+      padding-bottom: 110px;
+      @media @bw1660 {
+         padding-top: 59px;
+         padding-bottom: 103px;
+      }
+      @media @bw1340 {
+         padding-top: 58px;
+         padding-bottom: 87px;
+      }
+      @media @bw768 {
+         padding-top: 39px;
+         padding-bottom: 8px;
+      }
+   } 
+}
+.arrow {
+   width: 54px;
+   height: 54px;
+   padding: 0;
+   border: none;
+   background: none;
+   color: @black;
+   font-size: 0;
+   text-decoration: none;
+   transition: color 0.2s;
+   cursor: pointer;
+   &:hover {
+      color: @hover_bl;
+   }
+   &__icon {
+      width: 24px;
+      height: 24px;
+   }
+}
+.arrow--disabled {
+   color: @black_ar;
+   pointer-events: none;
+   opacity: 0.5;
+}

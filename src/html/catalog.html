@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('blocks/head.html')
+<body>
+   <!-- Шапка сайта -->
+   @@include('blocks/page-header.html')
+   <!-- Содержание -->
+   <main class="main">
+      <div class="main__container">
+         <section class="catalog">
+            <div class="catalog__container">
+               <!-- Навигация -->
+               <div class="catalog__breadcrumbs breadcrumbs">
+                  <a href="index.html" class="breadcrumbs__link">Главная</a>
+                  <a href="#" class="breadcrumbs__link">Каталог</a>
+                  <button type="button" class="breadcrumbs__btn" id="#js-hideButton">
+                     <svg class="breadcrumbs__icon" width="24" height="24">
+                        <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                     </svg>
+                  </button>
+               </div>
+               <!-- Каталог -->
+               <div class="catalog__products">
+                  <h1 class="section-title catalog__title">Каталог</h1>
+                  <div class="catalog__products-wrapper">
+                     <div class="catalog__products-btns">
+                        <button type="button" class="catalog__button-filter" id="js-btnFilter">
+                           Фильтр </button>
+                        <button type="reset" class="catalog__button-reset" id="js-resetBtn">
+                           Сбросить</button>
+                     </div>
+                     <div class="catalog__products-box">
+                        @@include('blocks/filters.html')
+                        @@include('blocks/listing.html')
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+   </main>
+   <!-- Подвал -->
+   @@include('blocks/page-footer.html')
+   <!-- Скрипты -->
+   <script src="scripts/jquery-3.7.1.min.js"></script>
+   <script src="scripts/nouislider.min.js"></script>
+   <script src="scripts/catalog.js"></script>
+   <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('blocks/head.html')
+<body>
+   <!-- Шапка -->
+   @@include('blocks/page-header.html')
+   <!-- Содержание -->
+   <main class="main">
+      <div class="main__container">
+         <!-- Слайдер-коллекция -->
+         @@include('blocks/collection.html')
+         <!-- Статья -->
+         @@include('blocks/aboutharing.html')
+         <!-- Слайдкр постеров-->
+         @@include('blocks/postersSlider.html')
+         <!-- Магазины-карта -->
+         @@include('blocks/location.html')
+      </div>
+   </main>   <!-- Подвал  -->
+   @@include('blocks/page-footer.html')
+   <!-- Скрипты -->
+   <script src="scripts/jquery-3.7.1.min.js"></script>
+   <!-- <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+   <script src="scripts/swiper-bundle.min.js"></script>
+   <script src="scripts/slick.min.js"></script>
+   <script src="scripts/swiperFirst.js"></script>
+   <script src="scripts/sliderSlick.js"></script>
+   <script src="scripts/main.js"></script>
+</body>
+</html>

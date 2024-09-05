@@ -1,0 +1,402 @@
+.product-card {
+   &__container {
+      .container();
+      display: flex;
+      padding-top: 55px;
+      gap: 56px;
+      @media @bw1660 {
+         gap: 36px;
+      }
+      @media @bw1340 {
+         position: relative;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding-top: 68px;
+         gap: 40px;
+      }
+      @media @bw768 {
+         padding-top: 77px;
+         gap: 26px;
+      }
+   }
+   &__picture-box {
+      width: 100%;
+      max-width: 478px;
+      border: 1px solid @gray_sign;
+      @media @bw1660 {
+         max-width: 444px;
+      }
+      @media @bw1340 {
+         max-width: 574px;
+      }
+      @media @bw768 {
+         max-width: 280px;
+      }
+      &:hover{
+         cursor: pointer;
+      }
+   }
+   &__picture {
+      position: relative;
+      display: block;
+      width: 414px;
+      margin: 30px 32px;
+      font-size: 0;
+      text-decoration: none;
+      overflow: hidden;
+      &::after {
+         content: "";
+         display: block;
+         width: 100%;
+         padding-top: 100.9%;
+         @media @bw1660 {
+            padding-top: 101.04%;
+         }
+         @media @bw1340 {
+            padding-top: 100.8%;
+         }
+      }
+      @media @bw1660 {
+         width: 384px;
+         margin: 28px 29px;
+      }
+      @media @bw1340 {
+         width: 497px;
+         margin: 36px 38px;
+      }
+      @media @bw768 {
+         width: 242px;
+         margin: 17px 18px;
+      }
+   }
+   &__img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+   }
+   &__info-box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+   }
+   &__title {
+      margin: 5px 0 57px;
+      color: @black;
+      font-family: @font1;
+      font-size: 24px;
+      font-weight: @font_weight4;
+      line-height: 0.625;
+      @media @bw1660 {
+         margin: 5px 0 58px;
+      }
+      @media @bw1340 {
+         position: absolute;
+         top: 0;
+         font-size: 20px;
+         line-height: 1.25;
+      }
+      @media @bw768 {
+         width: 180px;
+         font-size: 16px;
+         line-height: 1.56;
+      }
+   }
+   &__span {
+      @media @bw768 {
+         display: none;
+      }
+   }
+   &__price {
+      margin: 0 0 50px;
+      color: @black;
+      font-family: @font1;
+      font-size: 40px;
+      font-weight: @font_weight4;
+      line-height: 1.04;
+      @media @bw1660 {
+         margin: 0 0 48px;
+      }
+      @media @bw1340 {
+         margin:  0 0 38px;
+         font-size: 34px;
+         line-height: 0.74;
+      }
+      @media @bw768 {
+         margin: 0 0 22px;
+         font-size: 20px;
+         line-height: 1.25;
+      }
+   }
+   &__box1 {
+      display: flex;
+      align-items: center;
+      @media @bw1660 {
+         margin: 5px 0 0 2px;
+      }
+      @media @bw1340 {
+         margin: 12px 0 0;
+      }
+      @media @bw768 {
+         margin: 26px 0 0
+      }
+   }
+   &__box1-qty {
+      margin: 0;
+      color: @black;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight2;
+      line-height: 1.388;
+      @media @bw1340 {
+         font-size: 16px;
+         line-height: 1.377;
+      }
+      @media @bw768 {
+         font-size: 18px;
+         line-height: 1.388;
+      }
+   }
+   &__box1-btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 108px;
+      margin-left: 45px;
+      @media @bw1340 {
+         margin-left: 50px;
+         margin-bottom: 3px;
+      }
+      @media @bw768 {
+         margin-left: 77px;
+      }
+   }
+   &__item {
+      margin: 0;
+      color: @black;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight4;
+      line-height: 1.388;
+      @media @bw1340 {
+         font-size: 16px;
+         line-height: 1.56;
+      }
+   }
+   &__btn {
+      flex-shrink: 0;
+      position: relative;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      padding: 0;
+      border: none;
+      background: none;
+      color: @black;
+      transition: color 0.2s;
+      cursor: pointer;
+      &:hover {
+         color: @hover_bl;
+      }
+   }
+   &__icon {
+      width: 100%;
+      height: 100%;
+   }
+   &__box2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 316px;
+      height: 52px;
+      margin-top: 45px;
+      margin-left: 3px;
+      @media @bw1340 {
+         max-width: 708px;
+         margin-top: 36px;
+         margin-left: 0;
+      }
+      @media @bw768 {
+         margin-top: 21px;
+      }
+   }
+   &__btn-heart {
+      flex-shrink: 0;
+      position: relative;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      margin-top: 10px;
+      padding: 0;
+      border: none;
+      background: none;
+      color: @blue;
+      transition: color 0.2s;
+      cursor: pointer;
+      &:hover {
+         color: @hover_bl;
+      }
+      @media @bw1340 {
+         position: absolute;
+         top: -7px;
+         right: 26px;
+      }
+      @media @bw768 {
+         top: -5px;
+         right: 16px;
+      }
+   }
+   &__icon-hear {
+      width: 100%;
+      height: 100%;
+   }
+   &__btn-add {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 263px;
+      height: 52px;
+      margin-top: 12px;
+      padding: 15px 10px;
+      border: none;
+      background-color: @blue;
+      color: @white;
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: @font_weight2;
+      line-height: 1.388;
+      text-align: center;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background-color 0.2s;
+      cursor: pointer;
+      &:hover {
+         background-color:@hover_bl;
+      }
+      @media @bw1340 {
+         width: 100%;
+         height: 50px;
+         margin-top: 0;
+         font-size: 16px;
+      }
+   }
+   &__box3 {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 245px;
+      margin-top: 38px;
+      padding: 0;
+      color: @black;
+      transition: color 0.2s;
+      cursor: pointer;
+      &:hover {
+         color: @hover_bl;
+      }
+      @media @bw1660 {
+         max-width: 242px;
+         margin-top: 36px;
+      }
+      @media @bw1340 {
+         max-width: 222px;
+         margin-top: 23px;
+         margin-left: -5px;
+      }
+   }
+   &__box3-icon {
+      width: 24px;
+      height: 24px;
+   }
+   &__box3-desc {
+      transition: color 0.2s;
+      &:hover {
+         color: @hover_bl;
+      }
+   }
+}
+.radio-choice {
+   box-sizing: border-box;
+   display: flex;
+   width: 100%;
+   max-width: 488px;
+   gap: 50px;
+   margin-left: 3px;
+   margin-bottom: 3px;
+   @media @bw1660 {
+      margin-left: 3px;
+      margin-bottom: 0;
+   }
+   @media @bw1340 {
+      gap: 51px;
+      margin-left: 0;
+   }
+   @media @bw768 {
+      flex-direction: column;
+      gap: 6px;
+   }
+
+   &__item {
+      position: relative;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 18px;
+      margin-bottom: 15px;
+      padding-top: 2px;
+      padding-left: 18px;
+      color: @black;
+      cursor: pointer;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+   &__input {
+      .is-hidden;
+
+      &:checked {
+         &~.radio-choice__mark {
+            background-color: @black;
+         }
+      }
+   }
+   &__mark {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      box-sizing: border-box;
+      display: block;
+      width: 18px;
+      height: 18px;
+      padding: 3px;
+      border: 2px solid @black;
+      border-radius: 50%;
+      background-clip: content-box;
+      background-color: transparent;
+      transition: background-color 0.2s;
+   }
+   &__label {
+      margin-left: 15px;
+      color: @black;
+      font-family: @font1;
+      font-weight: @font_weight2;
+      font-size: 18px;
+      line-height: 1.388;
+      white-space: nowrap;
+      @media @bw1340 {
+         font-size: 16px;
+         line-height: 1.377;
+      }
+   }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('blocks/head.html')
+<body>
+   <!-- Шапка -->
+   @@include('blocks/page-header.html')
+   <!-- Содержание -->
+   <main class="main">
+      <div class="main__container">
+         <section class="product">
+            <div class="product__container">
+               <!-- Хлебные крошки-->
+               <div class="product__breadcrumbs">
+                  <a href="index.html" class="product__breadcrumbs-link">Главная</a>
+                  <a href="catalog.html" class="product__breadcrumbs-link">Каталог</a>
+                  <a href="#" class="product__breadcrumbs-link">Постер Andy Mouse | 60-60 см</a>
+                  <button type="button" class="product__breadcrumbs-btn">
+                     <svg class="product__breadcrumbs-icon" width="24" height="24">
+                        <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                     </svg>
+                  </button>
+               </div>
+               @@include('blocks/product-card.html')
+               @@include('blocks/description.html')
+               @@include('blocks/gallerySlider.html')
+            </div>
+         </section>
+      </div>
+   </main>
+   <!-- Подвал -->
+   @@include('blocks/page-footer.html')
+   @@include('blocks/product-pp.html')
+   <!-- Скрипты -->
+   <script src="scripts/jquery-3.7.1.min.js"></script>
+   <script src="scripts/swiper-bundle.min.js"></script>
+   <script src="scripts/product.js"></script>
+   <script src="scripts/main.js"></script>
+</body>
+</html>
